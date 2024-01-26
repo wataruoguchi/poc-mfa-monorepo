@@ -1,0 +1,14 @@
+{
+  "name": "poc-mfa-monorepo",
+  "workspaces": [
+    "apps/*"
+  ],
+  "version": "1.0.0",
+  "description": "Micro-frontend monorepo with ceparated CI/CD pipelines with GitHub Actions",
+  "scripts": {
+    "readme": "We should not have any scripts here. Micro Frontend Apps should be independent.",
+    "test": "npm run test --workspaces"
+  },
+  "author": "Wataru Oguchi",
+  "license": "ISC"
+}
