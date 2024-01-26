@@ -1,14 +1,14 @@
 name: Test mfa-legacy-app-container
 
-env:
-  APP_NAME: mfa-legacy-app-container
-
 on:
   push:
     branches:
       - "**"
     paths:
-      - "apps/$APP_NAME/**"
+      - "apps/mfa-legacy-app-container/**"
+
+env:
+  APP_NAME: mfa-legacy-app-container
 
 jobs:
   test:
