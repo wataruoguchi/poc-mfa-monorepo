@@ -7,6 +7,9 @@ on:
     paths:
       - "apps/shell/**"
 
+env:
+  APP_NAME: shell
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -22,7 +25,7 @@ jobs:
           cache: "npm"
 
       - name: Install dependencies
-        run: npm ci --workspace=shell --ignore-scripts
+        run: npm ci --workspace=$APP_NAME --ignore-scripts
 
       - name: Run tests
-        run: npm test --workspace=shell
+        run: npm test --workspace=$APP_NAME
